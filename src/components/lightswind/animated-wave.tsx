@@ -107,9 +107,9 @@ const addEase = (
   to: { x: number; y: number; z: number },
   ease: number
 ) => {
-  pos.x += (to.x - pos.x) / ease;
-  pos.y += (to.y - pos.y) / ease;
-  pos.z += (to.z - pos.z) / ease;
+  pos.x += (to.x - pos.x) ;
+  pos.y += (to.y - pos.y) ;
+  pos.z += (to.z - pos.z) ;
 };
 
 const getElementBackground = (element: HTMLElement): string | null => {
@@ -170,14 +170,14 @@ const isColorDark = (color: THREE.Color): boolean => {
 
 const AnimatedWave: React.FC<AnimatedWaveProps> = ({
   className,
-  speed = 0.0030,
+  speed = 0.008,
   amplitude = 30,
   smoothness = 300,
   wireframe = true,
   waveColor,
   opacity = 1,
   mouseInteraction = false,
-  quality = 'low',
+  quality = 'medium',
   fov = 60,
   waveOffsetY = -300,
   waveRotation = 29.8,
