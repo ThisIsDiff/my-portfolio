@@ -12,11 +12,11 @@ export default function Home() {
       <Background />
       {/* Your content sits on top of the background */}
       <div className="relative z-10 text-center px-6">
-        <h1 className="text-6xl font-bold text-black drop-shadow-lg">
+        <h1 className="text-6xl font-bold text-black drop-shadow-lg font-courier">
           Chongze Peng
         </h1>
         <p className="mt-4 text-xl text-black/80 drop-shadow">
-          Cloud & DevOps Engineer · Software Developer
+          Cloud & DevOps Engineer · Software Developer · Full Stack Developer
         </p>
       </div>
     </main>
